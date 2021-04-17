@@ -1,0 +1,114 @@
+:root{
+    --light-blue: #4D8BD4;
+    --blue: #1D5BA4;
+    --dark-blue: #134379;
+    --shadow-blue: #032349;
+    --white: #FFFFFF;
+    --berge: #9C0203;
+    --light-gray: #F5F5F5;
+    --dark-berge: #610906;
+    --dark: #0A0B14;
+}
+
+.content-image-icon{
+    height: 320px;
+    width: 320px;
+    background-image: linear-gradient( #000000 20%, #101113 );
+    margin: 40px 0px;
+    z-index: 15;
+    overflow: hidden;
+}
+
+.content-image-icon .subcontent-image-icon{
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
+    background-image: linear-gradient( #000000 20%, #101113 );
+    opacity: 0.6;
+}
+
+.part-title .part-title-text{
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var( --dark );
+}
+
+.part-title .part-title-bar{
+    height: 10px;
+}
+
+.part-title .part-title-bar .bar{
+    height: 3px;
+    width: 110px;
+    background-color: var( --shadow-blue );
+    border-radius: 8px;
+}
+
+.part-content-text{
+    font-size: 1.2em;
+}
+
+#hire{
+    height: 50px;
+    padding: 5px 100px;
+    font-size: 1.5em;
+    color: var( --white );
+    background-color: var( --dark );
+    border: none !important;
+    border-radius: 4px !important;
+}
+
+.description{
+    background-color: var( --light-gray );
+}
+
+.content-card-part{
+    width: 100%;
+    max-width: 98%;
+    min-height: 350px;
+}
+
+.content-card-part .img{
+    max-height: 250px !important;
+    max-width: 300px !important;
+}
+
+.content-card-part .card-title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.content-card-part .card-icon{
+    max-width: 350px;
+}
+
+.image-logo{
+    max-width: 100%;
+}
+
+@media ( min-width: 992px ) {
+    .content-image-icon{
+        width: 400px;
+        height: 400px;
+    }
+
+    .content-card-part .card-title{
+        font-size: 1.5em;
+    }
+
+    .content-card-part .part-text{
+        font-size: 1.2em;
+    }
+
+    .part-title .part-title-bar .bar{
+        height: 4px;
+        width: 170px;
+    }
+}
+
+@media ( min-width: 568px ) {
+    .content-card-part .img{
+        max-width: none;
+    }
+}

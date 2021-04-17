@@ -1,0 +1,330 @@
+:root{
+    --light-blue: #4D8BD4;
+    --blue: #1D5BA4;
+    --dark-blue: #134379;
+    --white: #FFFFFF;
+    --berge: #9C0203;
+    --light-gray: #F5F5F5;
+    --dark-berge: #610906;
+    --dark: #0A0B14;
+    --banner-height: 420px;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb{
+    background-color: #000000;
+}
+
+@font-face{
+    src: url( "/files/police/Aaargh.ttf" );
+    font-family: aaargh;
+}
+
+@font-face{
+    src: url( "/files/police/Satherday.otf" );
+    font-family: demo;
+}
+
+*{
+    font-family: aaargh;
+    color: var( --text );
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#__next{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.content-banner{
+    height: var( --banner-height );
+    background: var( --dark );
+    overflow: hidden;
+}
+
+.content-banner::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    background: linear-gradient( 180deg, rgba( 0, 0, 0, 0.5 ) 1%, var( --dark ) );
+    opacity: 1;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.content-banner .banner-text{
+    font-size: 2.1em;
+    font-weight: bold;
+    color: var( --white );
+    z-index: 5;
+    text-align: center;
+    letter-spacing: 0.12em;
+}
+
+.content-banner .banner-img{
+    height: 600px;
+    width: auto;
+}
+
+.nav-container{
+    background-color: var( --dark );
+    min-height: 60px !important;
+    height: auto !important;
+}
+
+.navbar-title,
+.navbar-text{
+    color: rgba( 255, 255, 255, 0.9 );
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.main-nav .nav-link:hover .navbar-title,
+.main-nav .nav-link:hover .navbar-text{
+    color: rgba( 255, 255, 255, 0.6 );
+}
+
+.main-nav .active:hover .navbar-title,
+.main-nav .active:hover .navbar-text{
+    color: rgba( 255, 255, 255, 0.9 );
+}
+
+.navbar-title{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.main-nav .nav-link{
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.main-nav-button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba( 255, 255, 255, 0.9 );
+    height: 35px;
+    width: 45px;
+}
+
+.main-nav-button .button-item{
+    display: block;
+    position: relative;
+    width: 60% !important;
+    left: 20%;
+    height: 2px !important;
+    border-radius: 3px;
+    background-color: rgba( 255, 255, 255, 0.9 );
+}
+
+.main-nav-button .button-item::before{
+    content: " ";
+    display: block;
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 3px;
+    background-color: rgba( 255, 255, 255, 0.9 );
+    top: -6px;
+}
+
+.main-nav-button .button-item::after{
+    content: " ";
+    display: block;
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 3px;
+    background-color: rgba( 255, 255, 255, 0.9 );
+    bottom: -4px;
+}
+
+.main-nav .nav-link .navbar-indicator{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 7px;
+    left: -3px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-nav .nav-link:hover .navbar-indicator{
+    background-color: rgba( 255, 255, 255, 0.2 );
+}
+
+.main-nav .active:hover .navbar-indicator,
+.main-nav .active .navbar-indicator{
+    background-color: rgba( 255, 255, 255, 0.9 );
+}
+
+.main-nav .nav-link .navbar-item-content{
+    display: flex;
+    position: relative;
+    flex: 1;
+    height: 100%;
+    padding-left: 8px;
+    letter-spacing: 0.08em;
+    font-weight: bold;
+}
+
+.subnav{
+    height: 100px;
+    background-image: url( "/img/menu-small.svg" );
+    background-size: 100% 100%;
+}
+
+.footer{
+    background-color: var( --dark );
+    overflow: hidden;
+}
+
+.footer .page-text-container{
+    background-color: var( --white );
+}
+
+.footer .page-text{
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    background-color: var( --dark );
+    color: var( --white );
+}
+
+.footer-item-container{
+    padding: 60px 0px !important;
+}
+
+.footer-item{
+    width: 380px;
+}
+
+.footer-item .footer-item-title{
+    color: var( --white );
+    font-size: 1.1em;
+}
+
+.footer-item .footer-item-content{
+    color: var( --white );
+    opacity: 0.5;
+    font-size: 0.8em;
+    padding-left: 40px;
+}
+
+.footer-bottom{
+    height: 150px;
+    background-image: url( "/img/footer.svg" );
+    background-color: #FFFFFF;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.footer-end{
+    background-color: #FFFFFF;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+}
+
+.footer a{
+    color: var( --dark );
+}
+
+.footer-sub-text{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #555555;
+    letter-spacing: 0.13em;
+}
+
+.footer-sub-text b{
+    font-weight: bold;
+    color: var( --dark );
+    letter-spacing: 0.12em;
+}
+
+@media ( min-width: 810px ) {
+    .content-banner .banner-text{
+        font-size: 2.5em;
+    }
+}
+
+@media ( min-width: 992px ) {
+    .navbar{
+        flex-direction: row !important;
+    }
+
+    .navbar-collapse{
+        width: 200px !important;
+    }
+
+    .main-nav .nav-link{
+        flex-direction: column !important;
+        padding: 0px 5px;
+    }
+
+    .main-nav .nav-link .navbar-item-content{
+        padding: 0px 8px;
+    }
+
+    .main-nav .nav-link .navbar-indicator{
+        width: 100%;
+        height: 7px;
+        top: 3.5px;
+    }
+}
+
+@media ( max-width: 992px ) {
+    .content-banner .banner-text{
+        font-size: 1.63em;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .content-banner .banner-text{
+        font-size: 1.33em;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .content-banner .banner-text{
+        font-size: 1.5em;
+    }
+}
+
+@media ( max-width: 390px ) {
+    .footer-title{
+        font-size: 1.1em;
+    }
+    
+    .footer-sub-text{
+        font-size: 0.7em;
+    }
+}
