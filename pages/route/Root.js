@@ -80,12 +80,14 @@ export default function Root ( { children, active } ) {
                                 <div className="footer-item-content d-block">
                                     <ul className="d-block d-flex flex-column p-0 py-1 m-0">
                                         <li> React and React Native </li>
-                                        <li> Lavarel </li>
+                                        <li> Laravel </li>
                                         <li> Next.js </li>
                                         <li> Bootstrap </li>
                                         <li> GrallVm </li>
                                         <li> JavaFx ( openfx ) </li>
                                         <li> Gtkm </li>
+                                        <li> Vue.js </li>
+                                        <li> Angular.js </li>
                                     </ul>
                                 </div>
                             </div>

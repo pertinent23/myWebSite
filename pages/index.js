@@ -78,6 +78,24 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
+                    <div className="row container-fluid content-card m-0 p-0 py-1 py-lg-2">
+                        <div className="col d-flex justify-content-center align-items-start py-2 py-lg-3">
+                            <div className="card content-card-part shadow-lg animate-item">
+                                <div className="card-body d-flex flex-column align-items-center">
+                                    <span className="card-title"> Angular </span>
+                                    <img src="/img/angular.png" alt="angular" className="card-icon d-block img-responsive img"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-6 d-flex justify-content-center align-items-start py-2 py-lg-3">
+                            <div className="card content-card-part shadow-lg animate-item">
+                                <div className="card-body d-flex flex-column align-items-center">
+                                    <span className="card-title"> Vue </span>
+                                    <img src="/img/vue.png" alt="vue" className="card-icon d-block img-responsive img"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="container-fluid d-flex justify-content-center align-items-center content-hire p-0 overflow-hidden animate-item">
