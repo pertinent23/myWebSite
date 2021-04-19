@@ -49,6 +49,6 @@ export default function Navigation ( { active } ) {
 
 items.pushAllItems( {
     "home": "Home",
-    "about-me": "About me",
+    //"about-me": "About me",
     "contact-me": "Contact me",
 } );

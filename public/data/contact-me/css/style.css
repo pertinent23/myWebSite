@@ -1,6 +1,3 @@
-.error-box{
-    height: 500px;
-    max-width: 950px;
-    background-color: #FFFFFF;
-    border: 1px solid #DDDDDD;
+.item-text{
+    color: var( --dark );
 }

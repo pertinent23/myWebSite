@@ -103,7 +103,7 @@ export default function Root ( { children, active } ) {
                             </div>
                             <div className="footer-sub-text py-1 mt-4">
                                 <b className="footer-sub-text"> Whatsapp business: </b>
-                                <a href="https://wa.me/c/237655788837?fbclid=IwAR1iL8B8mi2OtQrveqj9EJq3-vNoxQfmNBTNDZ-8meBZD908AHbCY7CS8s4"> +237 6 55 78 88 37 </a>
+                                <a href="https://wa.me/c/237655788837"> +237 6 55 78 88 37 </a>
                             </div>
                             <div className="footer-sub-text py-1">
                                 <b className="footer-sub-text"> E-mail: </b>
