@@ -105,7 +105,7 @@ export default function Root ( { children, active } ) {
                             </div>
                             <div className="footer-sub-text py-1">
                                 <b className="footer-sub-text"> E-mail: </b>
-                                <a href="mailto:10franckpert@gmail.com"> 10franckpert@gmail.com </a>
+                                <a href="mailto:10franckpertinent@gmail.com"> 10franckpertinent@gmail.com </a>
                             </div>
                             <div className="footer-sub-text py-1">
                                 <b className="footer-sub-text"> Facebook </b>
@@ -115,6 +115,9 @@ export default function Root ( { children, active } ) {
                                 <b className="footer-sub-text"> Instagram: </b>
                                 <a href="https://www.instagram.com/web.designer2.0"> web.designer2.0 </a>
                             </div>
+                        </div>
+                        <div className="container-fuild py-4">
+                            <div className="container text-center"> &copy; copyright { new Date().getFullYear() } </div>
                         </div>
                     </div>
                 </div>

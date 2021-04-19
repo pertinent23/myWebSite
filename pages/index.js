@@ -27,7 +27,7 @@ export default function Index() {
                         </div>
                         <div className="part-content d-flex-flex-column w-100 p-0 mb-5 animate-item">
                             <div className="container-fluid part-content-text d-block position relative text-left">
-                                I am Franck Duval, web et Java developer. JavaScript specialist. I am currently styduing
+                                I am Franck Duval, i'am { new Date().getFullYear() - 2003 - 1 } years old, web and Java developer. JavaScript specialist. I am currently styduing
                                 at Yaounde 1 University, based in Yaounde, capital of the Camroon. Am member of the Google Student 
                                 developer program. I'm back-end developer and front-end designer.
                             </div>
@@ -36,7 +36,9 @@ export default function Index() {
                 </div>
             </div>
             <div className="container-fluid d-flex justify-content-center align-items-center content-hire m-0 p-0 py-4">
-                <input type="button" value="Hire me" id="hire"/>
+                <a href="mailto:10franckpertinent@gmail.com" target="_blank">
+                    <input type="button" value="Hire me" id="hire"/>
+                </a>
             </div>
             <div className="description container-fluid content-card m-0 p-0 py-5">
                 <div className="description-content container-fluid content-card m-0 p-0 py-4">
